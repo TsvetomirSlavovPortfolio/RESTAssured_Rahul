@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="none">
+
+	<test name="testing">
+	  	<groups>
+	      <run>
+	        <include name="Search_Text_Lands"/>
+	        <include name="JsonPlaceHolder_Posts"/>
+	        <include name="country"/>
+	        <include name="ThomasCustomer"/>
+	        <include name="Football"/>
+	      </run>
+	    </groups>
+	    <classes>
+	       <class name="rk.RESTAssured.CouchDB_REST" />
+	       <class name="rk.RESTAssured.GroovyFeatures" />
+	       <class name="rk.RESTAssured.HeadersAndCookies" />
+	       <class name="rk.RESTAssured.ReadResponseInDifferentWays_1" />
+	       <class name="rk.RESTAssured.ReadResponseInDifferentWays_2" />
+	       <class name="rk.RESTAssured.REST_CreatePOSTRequest_1" />
+	       <class name="rk.RESTAssured.REST_CreatePOSTRequest_2" />
+	       <class name="rk.RESTAssured.REST_Json" />
+	       <class name="rk.RESTAssured.REST_JsonRoot" />
+	       <class name="rk.RESTAssured.REST_SchemaValidation" />
+	       <class name="rk.RESTAssured.REST_ValuePass" />
+	       <class name="rk.RESTAssured.REST_Xml" />
+	    </classes>
+	  </test>
+</suite>
+
+
+
+<!-- 
+(groups = { "CouchBase" },priority=1)
+(groups = { "Groovy", "Search_Text_Lands" },priority=1)
+(groups = { "Search_Text_Lands" },priority=1)
+(groups = { "Groovy", "Football" },priority=3)
+(groups = { "Headers", "Search_Text_Lands" },priority=1)
+(groups = { "Cookies", "JsonPlaceHolder_Posts" },priority=1)
+(groups = { "JsonPlaceHolder_Photos" },priority=1)
+(groups = { "CreateCustomer" },priority=1)
+(groups = { "CreateCustomer","CouchBase" },priority=1)
+(groups = { "JsonPlaceHolder_Posts" },priority=1)
+(groups = { "country" },priority=1)
+(groups = { "Schema" },priority=1)
+(groups = { "ThomasCustomer" },priority=1)
+(groups = { "ThomasCustomerInvoice" },priority=1) 
+-->

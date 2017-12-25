@@ -1,0 +1,10 @@
+{
+  "RestResponse" : {
+    "messages" : [ "Rahul Kinge JSON SChema Validator" ],
+    "result" : {
+      "name" : "XOXOXOXOXOXOXOX",
+      "alpha2_code" : "XO",
+      "alpha3_code" : "XOXO"
+    }
+  }
+}
