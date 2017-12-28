@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite" parallel="none">
+<suite name="Suite" parallel="tests" verbose="1">
 
 	<test name="testing">
 	  	<groups>
@@ -8,6 +8,32 @@
 	        <include name="Search_Text_Lands"/>
 	        <include name="JsonPlaceHolder_Posts"/>
 	        <include name="country"/>
+	      </run>
+	    </groups>
+	    
+<!-- 	    <parameter name="browser" value="Firefox"/>
+		<parameter name="username" value="testuser"/>
+		<parameter name="password" value="testpassword"/> -->
+	
+	    <classes>
+	       <class name="rk.RESTAssured.CouchDB_REST" />
+	       <class name="rk.RESTAssured.GroovyFeatures" />
+	       <class name="rk.RESTAssured.HeadersAndCookies" />
+	       <class name="rk.RESTAssured.ReadResponseInDifferentWays_1" />
+	       <class name="rk.RESTAssured.ReadResponseInDifferentWays_2" />
+	       <class name="rk.RESTAssured.REST_CreatePOSTRequest_1" />
+	       <class name="rk.RESTAssured.REST_CreatePOSTRequest_2" />
+	       <class name="rk.RESTAssured.REST_Json" />
+	       <class name="rk.RESTAssured.REST_JsonRoot" />
+	       <class name="rk.RESTAssured.REST_SchemaValidation" />
+	       <class name="rk.RESTAssured.REST_ValuePass" />
+	       <class name="rk.RESTAssured.REST_Xml" />
+	    </classes>
+	  </test>
+
+  <test name="Regression Test Cases">
+  	  	<groups>
+	      <run>
 	        <include name="ThomasCustomer"/>
 	        <include name="Football"/>
 	      </run>
@@ -26,7 +52,8 @@
 	       <class name="rk.RESTAssured.REST_ValuePass" />
 	       <class name="rk.RESTAssured.REST_Xml" />
 	    </classes>
-	  </test>
+  </test>
+
 </suite>
 
 
